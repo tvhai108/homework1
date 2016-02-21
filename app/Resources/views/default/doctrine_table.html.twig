@@ -1,0 +1,21 @@
+{# app/Resources/views/lucky/number.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table>
+        <tr>
+            <td>{{ 'id' }}</td>
+            <td>{{ 'name' }}</td>
+            <td>{{ 'price' }}</td>
+            <td>{{ 'description' }}</td>
+        </tr>
+        {% for item in arr_ %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.price }}</td>
+                <td>{{ item.description }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
